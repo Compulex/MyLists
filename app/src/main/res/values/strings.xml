@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Lists</string>
+    <!--Main-->
+    <string name="title">My Lists</string>
+    <string name="newBtn">New List</string>
+
+    <!--SetList-->
+    <string name="editText">Name of List</string>
+    <string name="it"><u>Set Item</u></string>
+    <string name="item">Item: </string>
+    <string name="qt">Quantity: </string>
+    <string name="desc">Specifics: </string>
+    <string name="descET">Describe item if necessary</string>
+    <string name="addBtn">Add</string>
+    <string name="doneBtn">Done</string>
+
+    <!--MyList Item-->
+    <string name="editBtn">Edit</string>
+    <string name="deleteBtn">Delete</string>
+
+    <!--ViewList-->
+    <string name="shareBtn">Share</string>
+</resources>

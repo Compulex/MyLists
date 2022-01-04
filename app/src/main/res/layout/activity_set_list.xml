@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetList">
+
+    <EditText
+        android:id="@+id/list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#dcdcdc"
+        android:textSize="20sp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/editText"
+        tools:ignore="LabelFor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/edit_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/it"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/item"/>
+            <EditText
+                android:id="@+id/item_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d3d3d3"
+                android:textSize="20sp"
+                android:ems="10"
+                android:inputType="text"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/qt"/>
+            <EditText
+                android:id="@+id/quantity_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d3d3d3"
+                android:textSize="20sp"
+                android:ems="10"
+                android:inputType="number"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/desc"/>
+            <EditText
+                android:id="@+id/specifics_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d3d3d3"
+                android:textSize="20sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="@string/descET"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/add_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/purple_700"
+            android:text="@string/addBtn"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/purple_700"
+            android:text="@string/doneBtn"
+            tools:ignore="ButtonStyle"/>
+    </TableRow>
+
+</LinearLayout>
